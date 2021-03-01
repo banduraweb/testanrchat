@@ -12,7 +12,7 @@ const LoginPage = (props) => {
     const password = passwordRef.current.value;
 
     axios
-      .post("http://localhost:3002/api/v1/admin/login", { ///api/v1/admin/login
+      .post("http://3.140.211.197/api/v1/admin/login", { ///api/v1/admin/login
         email,
         password,
       })
