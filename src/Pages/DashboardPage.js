@@ -7,7 +7,7 @@ const DashboardPage = ({socket}) => {
   const [chatrooms, setChatrooms] = React.useState([]);
   const getChatrooms = () => {
     axios
-      .get("http://localhost:3002/api/v1/chat/get-chats-users", {
+      .get("http://3.140.211.197/api/v1/chat/get-chats-users", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("CC_Token"),
         },

@@ -17,6 +17,7 @@ function App() {
    const [role, setRome] = React.useState(null);
 
   const setupSocket = () => {
+    console.log("connecting");
     const token = localStorage.getItem("CC_Token");
 
     if (token && !socket) {
